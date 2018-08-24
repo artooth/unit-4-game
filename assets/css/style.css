@@ -1,0 +1,18 @@
+.gemimg{
+    width: 150px;
+    margin: 30px auto;
+}
+
+body{
+    background-image: url("../images/watercolor.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#616365
+}
+
+h3{
+    text-align: center;
+    
+}
+
+
