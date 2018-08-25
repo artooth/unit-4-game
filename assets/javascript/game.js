@@ -1,15 +1,15 @@
 $(document).ready(function() {
-    let magicNumber; 
+    let magicNumber= ""; 
     let totalScore= 0;
-    let gem1;
-    let gem2;
-    let gem3;
-    let gem4;
+    let gem1= "";
+    let gem2= "";
+    let gem3= "";
+    let gem4= "";
     let wins= 0;
     let losses= 0;
 
     function newNumbers() {
-        magicNumber = Math.floor(Math.random() * 110) + 20;
+        magicNumber = Math.floor(Math.random() * 100) + 5;
         gem1Number = Math.ceil(Math.random() * 12);
         gem2Number = Math.floor(Math.random() * 12);
         gem3Number = Math.floor(Math.random() * 12);
@@ -31,16 +31,16 @@ $(document).ready(function() {
     }
 
     function youLose() {
-        $("#playAgain").text("You Lose!");
+        $("#score").text("You Lose!");
         losses++;
         $("#losses").text(losses);
-    }
+     }
 
-    function youWin() {
-        $("#playAgain").text("You WIN!");
+     function youWin() {
+        $("#score").text("You WIN!");
         wins++;
         $("#wins").text(wins);
-    }
+     }
 
   
 
@@ -70,6 +70,18 @@ $(document).ready(function() {
     } else if (totalScore > magicNumber) {
             youLose();
     }
+
+    // function youLose() {
+    //     $("#score").text("You Lose!");
+    //     losses++;
+    //     $("#losses").text(losses);
+    //  }
+
+    //  function youWin() {
+    //     $("#score").text("You WIN!");
+    //     wins++;
+    //     $("#wins").text(wins);
+    //  }
 
 });
 

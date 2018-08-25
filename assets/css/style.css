@@ -1,6 +1,22 @@
 .gemimg{
     width: 150px;
     margin: 30px auto;
+    border: 0;
+    background: none;
+    border-style: none;
+}
+
+header{
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    padding-top: 10px;
+
+}
+p{ 
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    
 }
 
 body{
@@ -12,7 +28,17 @@ body{
 
 h3{
     text-align: center;
-    
+    font-size: 20px;
+
 }
 
+h2{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Cinzel', serif;
 
+}
+
+.btn {
+    color:#616365  
+}
